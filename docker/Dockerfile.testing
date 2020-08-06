@@ -1,0 +1,16 @@
+FROM ubuntu:18.04
+
+RUN apt-get update \
+  && apt-get install -y software-properties-common \
+  && add-apt-repository ppa:deadsnakes/ppa
+
+RUN apt-get install -y build-essential python3.6 python3.6-dev python3-pip python3.6-venv\
+  && cd /usr/local/bin \
+  && ln -s /usr/bin/python36 python \
+  && pip3 install --upgrade pip 
+
+RUN apt-get install -y vim git
+
+RUN pip install -r requirement-testing.txt
+
+# ENTRYPOINT ["python3"]

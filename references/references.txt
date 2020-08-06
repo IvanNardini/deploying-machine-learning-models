@@ -1,0 +1,2 @@
+https://joecmarshall.com/posts/python-app-seed/
+https://www.terriblecode.com/blog/dockerizing-python-test-environments/
