@@ -3,7 +3,7 @@ version: '3'
 services:
     testing:
       build:
-        context: ./docker
+        context: ./
         dockerfile: Dockerfile.testing
       image: ml-testing:v1
       container_name: ml-testing
